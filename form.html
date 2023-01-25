@@ -1,0 +1,24 @@
+<Doctype! html>
+    <html>
+  <head>
+    <title>PDF Rotation</title>
+  </head>
+  <body>
+    <form action="/rotate" method="POST">
+      <label>PDF File Path:</label>
+      <input type="text" name="file_path" required>
+      <br>
+      <label>Angle of Rotation:</label>
+      <select name="angle_of_rotation" required>
+        <option value="90" type = "number">90</option>
+        <option value="180" type = "number">180</option>
+        <option value="270" type = "number">270</option>
+      </select>
+      <br>
+      <label>Page Number:</label>
+      <input type="number" name="page_number" required>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
